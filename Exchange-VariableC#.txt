@@ -1,0 +1,52 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+/*9. Exchange Variable Values
+            • Declare two integer variables  a  and  b  
+            and assign them with  5  and  10  and after that 
+            exchange their values by using some programming logic.
+            • Print the variable values before and after the exchange.*/
+using System;
+
+namespace ExchangeVariableValues
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("INSIDE 10 OR 5 FOR a or b");
+            Console.Write("a = ");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("b = ");
+            int b = int.Parse(Console.ReadLine());
+            if (a > 5 && a > 10 || b > 5 
+                && b > 10 || a < 5 
+                && a > 10 || b < 5 
+                && b > 10 || a < 5 
+                && b < 5  || a > 5 
+                && b < 10 || a == b
+                || a == 5 && b < 5
+                || a == 5 && b < 10 
+                || a == 10 && b < 5 
+                || a > 5 && b < 10 
+                || a < 5 && b == 10 
+                || a > 5 && b == 10 
+                || b== 5 && a < 5
+                || b==5 && a > 10 
+                || b == 5 && a > 5 
+                || a < 5 && b < 10 )
+            {
+                Console.WriteLine("Error - exeption number, only 5 and 10 ");
+            }
+            else
+                if (a == 5 || b == 10)
+            {
+                Console.WriteLine("Print after: {0} {1}", a, b);
+            } else {
+                if (a==10 || b==5)
+                Console.WriteLine("Print befor: {0} {1}", 10, 5);
+            }
+         }
+     }
+ }
